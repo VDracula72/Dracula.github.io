@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Futuristic Pagpipilian</title>
+<style>
+  body {
+    background-color: #0F1E29;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  h2 {
+    font-size: 28px;
+    margin-top: 50px;
+    text-shadow: 0 0 5px #00FFFF;
+  }
+  button {
+    background-color: #00FFFF;
+    border: none;
+    color: #000000;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 20px 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #00FFFF;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    font-family: 'Montserrat', sans-serif; /* Bagong font style */
+  }
+  button:hover {
+    background-color: #00CCCC;
+    box-shadow: 0 0 15px #00FFFF;
+  }
+  /* Bagong CSS para sa paglipat-lipat ng posisyon */
+  .move-animation {
+    transition: transform 1s ease-in-out;
+  }
+  #video-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    margin-top: 50px;
+  }
+  #myVideo {
+    width: 70%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #00FFFF;
+  }
+</style>
+</head>
+<body>
+
+<h2>Kanino ka lang?</h2>
+
+<button onclick="selectOption('kay_mc_shane')">Kay Mc Shane</button>
+<button id="kanya_button" onclick="moveButton()">Sa kanya</button>
+
+<div id="video-container">
+  <video id="myVideo" controls autoplay>
+    <source src="video1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+<script>
+function selectOption(selection) {
+  if (selection === 'kay_mc_shane') {
+    window.location.href = 'nextpage2.html'; // I-redirect sa next_page.html
+  }
+}
+
+function moveButton() {
+  var button = document.getElementById('kanya_button'); // Get the "Sa kanya" button
+  var randomX = Math.random() * (window.innerWidth - button.offsetWidth);
+  var randomY = Math.random() * (window.innerHeight - button.offsetHeight);
+  button.style.position = 'absolute';
+  button.style.left = randomX + 'px';
+  button.style.top = randomY + 'px';
+  button.classList.add('move-animation');
+  
+  var videoContainer = document.getElementById('video-container');
+  videoContainer.style.display = 'block';
+  document.getElementById('myVideo').play();
+}
+</script>
+
+</body>
+</html>

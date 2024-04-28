@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey on Student Preferences: Modular Distance Learning vs. Face-to-Face Instruction</title>
+  <style>
+    body {
+      background-color: #0e101c;
+      color: #ffffff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .survey-form {
+      background-color: #1c1f2b;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .question {
+      margin-bottom: 20px;
+    }
+
+    .question-number {
+      color: #6fffe9;
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .question-text {
+      margin: 10px 0;
+    }
+
+    .options {
+      margin-left: 20px;
+    }
+
+    .option {
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .submit-button {
+      background-color: #6fffe9;
+      color: #0e101c;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 20px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .submit-button:hover {
+      background-color: #53d1c9;
+    }
+
+    /* Futuristic design for warning message */
+    .warning {
+      background-color: #1c1f2b;
+      color: #6fffe9;
+      border: 2px solid #6fffe9;
+      border-radius: 5px;
+      padding: 15px;
+      margin-top: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1 class="header">Survey on Student Preferences: Modular Distance Learning vs. Face-to-Face Instruction</h1>
+
+  <form id="surveyForm" action="nextpage1.html" method="post" class="survey-form">
+    
+    <div class="question">
+      <h3 class="question-number">1.</h3>
+      <h3 class="question-text">In your opinion, which is more effective for you: modular distance learning or face-to-face instruction?</h3>
+      <div class="options">
+        <label class="option"><input type="radio" name="q1" value="modular"> Modular distance learning</label><br>
+        <label class="option"><input type="radio" name="q1" value="face_to_face"> Face-to-face instruction</label><br>
+        <label class="option"><input type="radio" name="q1" value="both"> Both are equally effective</label><br>
+        <label class="option"><input type="radio" name="q1" value="depends"> It depends on the experience</label><br>
+      </div>
+    </div>
+    
+    <div class="question">
+      <h3 class="question-number">2.</h3>
+      <h3 class="question-text">What are the main challenges you face in modular distance learning?</h3>
+      <div class="options">
+        <label class="option"><input type="checkbox" name="q2[]" value="access_materials"> Lack of access to learning materials</label><br>
+        <label class="option"><input type="checkbox" name="q2[]" value="direct_assistance"> Lack of direct assistance from teachers</label><br>
+        <label class="option"><input type="checkbox" name="q2[]" value="interaction"> Lack of interaction with fellow students</label><br>
+      </div>
+    </div>
+    
+    <div class="question">
+      <h3 class="question-number">3.</h3>
+      <h3 class="question-text">What are the main benefits of modular distance learning that you don't see in face-to-face instruction?</h3>
+      <div class="options">
+        <label class="option"><input type="checkbox" name="q3[]" value="flexibility"> Flexibility in study time and location</label><br>
+        <label class="option"><input type="checkbox" name="q3[]" value="self_pacing"> Ability to self-pace your learning</label><br>
+        <label class="option"><input type="checkbox" name="q3[]" value="access_resources"> Access to a wider range of learning resources</label><br>
+      </div>
+    </div>
+    
+    <div class="question">
+      <h3 class="question-number">4.</h3>
+      <h3 class="question-text">In your opinion, what is the most important aspect missing in modular distance learning compared to face-to-face instruction?</h3>
+      <div class="options">
+        <label class="option"><input type="radio" name="q4" value="interaction"> Interactive engagement with teachers and peers</label><br>
+        <label class="option"><input type="radio" name="q4" value="guidance_support"> Personal guidance and support from teachers</label><br>
+        <label class="option"><input type="radio" name="q4" value="hands_on"> Opportunities for hands-on learning experiences</label><br>
+      </div>
+    </div>
+    
+    <div class="question">
+      <h3 class="question-number">5.</h3>
+      <h3 class="question-text">How do you measure your success in modular distance learning compared to face-to-face instruction?</h3>
+      <div class="options">
+        <label class="option"><input type="checkbox" name="q5[]" value="grades"> By understanding and achieving high grades in assessments</label><br>
+        <label class="option"><input type="checkbox" name="q5[]" value="participation"> By actively participating in and contributing to online discussions</label><br>
+        <label class="option"><input type="checkbox" name="q5[]" value="meeting_objectives"> By meeting learning objectives and demonstrating progress</label><br>
+      </div>
+    </div>
+    
+    <div class="question">
+      <h3 class="question-number">6.</h3>
+      <h3 class="question-text">What is the most effective way to address the needs and challenges in modular distance learning?</h3>
+      <div class="options">
+        <label class="option"><input type="checkbox" name="q6[]" value="communication"> Regular communication and interaction with teachers and fellow students</label><br>
+        <label class="option"><input type="checkbox" name="q6[]" value="planning_organization"> Detailed planning and organization of time</label><br>
+        <label class="option"><input type="checkbox" name="q6[]" value="utilizing_resources"> Utilizing various online resources and educational platforms</label><br>
+      </div>
+    </div>
+    
+    <div class="question">
+      <h3 class="question-number">7.</h3>
+      <h3 class="question-text">In your opinion, how can the experience of modular distance learning be improved?</h3>
+      <div class="options">
+        <label class="option"><input type="checkbox" name="q7[]" value="interactive_tools"> Using more interactive online platforms and tools</label><br>
+        <label class="option"><input type="checkbox" name="q7[]" value="support_assistance"> Strengthening support and assistance from schools and communities</label><br>
+        <label class="option"><input type="checkbox" name="q7[]" value="expanding_access"> Expanding access to learning materials and resources</label><br>
+      </div>
+    </div>
+    
+    <input type="submit" value="Submit" class="submit-button" onclick="return validateForm()">
+  </form>
+
+  <div id="warningMessage" class="warning" style="display: none;">
+    Please answer all questions before submitting.
+  </div>
+</div>
+
+<script>
+function validateForm() {
+  var isValid = true;
+
+  // I-check kung may mga tanong na hindi pa nasasagot
+  var questions = document.querySelectorAll('.question');
+  questions.forEach(function(question) {
+    var inputs = question.querySelectorAll('input[type="radio"], input[type="checkbox"]');
+    var isAnswered = false;
+
+    inputs.forEach(function(input) {
+      if (input.checked) {
+        isAnswered = true;
+      }
+    });
+
+    if (!isAnswered) {
+      isValid = false;
+    }
+  });
+
+  // Kung hindi kumpleto ang mga sagot, i-disable ang pag-submit at magpakita ng warning message
+  if (!isValid) {
+    document.getElementById('warningMessage').style.display = 'block';
+    return false;
+  }
+}
+</script>
+
+</body>
+</html>
